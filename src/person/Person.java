@@ -76,9 +76,17 @@ public class Person implements Comparable<Person> {
                 "Email Address: " + email + "\n" +
                 "-------- * -------- * -------- * --------";
     }
-
+    //This method compare the fName of two persons.
     @Override
+    public int compareTo(Person person) {
+        return fName.compareTo(person.fName);
+
+    }
+
+   /* @Override
     public int compareTo(Person o) {
         return 0;
     }
+    */
+
 }
