@@ -15,5 +15,5 @@ public interface ADT<E> {
      */
     void sort();                 //This method will sort the list based on their nodes' data in ascending order.
 
-
+    void print();              //This method will print all the item in the list.
 }
