@@ -26,6 +26,12 @@ public class SinglyLinkedList<E> implements ADT<E> {
         head = new Node<>(item, head);
         size++;
     }
+    //This method add node after the given node.
+    private void addAfter(Node<E> node, E item) {
+        Node<E> node1 = new Node<>(item, node.next);
+        node.next = node1;
+        size++;
+    }
 
 
     @Override
