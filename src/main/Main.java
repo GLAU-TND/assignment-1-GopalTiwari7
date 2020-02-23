@@ -86,6 +86,7 @@ public class Main {
         Collections.sort(list2);
         return list;
     }
+
     //This method contain all the needed information accept from the user to perform search.
     public static SinglyLinkedList searchContact(SinglyLinkedList list, ArrayList list2) {
         System.out.println("You could search for a contact from their first names:");
@@ -127,5 +128,6 @@ public class Main {
         list2.remove(i - 1);
         return list;
 
+    }
 }
 
