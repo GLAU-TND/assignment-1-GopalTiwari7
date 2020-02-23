@@ -82,6 +82,10 @@ public class Person implements Comparable<Person> {
         return fName.compareTo(person.fName);
 
     }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 
    /* @Override
     public int compareTo(Person o) {
