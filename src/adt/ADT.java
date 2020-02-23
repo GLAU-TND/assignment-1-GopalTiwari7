@@ -13,6 +13,7 @@ public interface ADT<E> {
 
        @param item the item to be searched inside the list.
      */
+    void sort();                 //This method will sort the list based on their nodes' data in ascending order.
 
 
 }
