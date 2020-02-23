@@ -97,11 +97,4 @@ public class Person implements Comparable<Person> {
         Person guest = (Person) obj;
         return fName.compareToIgnoreCase(guest.fName) >= 1;
     }
-
-   /* @Override
-    public int compareTo(Person o) {
-        return 0;
-    }
-    */
-
 }
