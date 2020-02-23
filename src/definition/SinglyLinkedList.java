@@ -21,6 +21,11 @@ public class SinglyLinkedList<E> implements ADT<E> {
         }
         return response;
     }
+    //This method add First node in list.
+    private void addFirst(E item) {
+        head = new Node<>(item, head);
+        size++;
+    }
 
 
     @Override
