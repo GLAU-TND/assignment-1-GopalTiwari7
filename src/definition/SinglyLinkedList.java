@@ -32,6 +32,13 @@ public class SinglyLinkedList<E> implements ADT<E> {
         node.next = node1;
         size++;
     }
+    public void add(int index, E item) {
+        if (index == 0) {
+            addFirst(item);
+        } else {
+            addAfter(getNode(index - 1), item);
+        }
+    }
 
 
     @Override
