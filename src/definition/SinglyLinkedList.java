@@ -89,9 +89,31 @@ public class SinglyLinkedList<E> implements ADT<E> {
         }
         return 0;
     }
-
+    //This method perform sorting in list.
     @Override
     public void sort() {
+        Node current = head, index = null;
+        E temp;
+
+        if (head == null) {
+            return;
+        } else {
+            while (current != null) {
+                //Node index will point to node next to current
+                index = current.next;
+
+                while (index != null) {
+                    //If current node's data is greater than index's node data, swap the data between them
+                    if ((current.data).equals(index.data)) {
+                        temp = (E) current.data;
+                        current.data = index.data;
+                        index.data = temp;
+                    }
+                    index = index.next;
+                }
+                current = current.next;
+            }
+        }
 
     }
 
