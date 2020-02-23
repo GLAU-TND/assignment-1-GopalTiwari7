@@ -43,7 +43,16 @@ public class SinglyLinkedList<E> implements ADT<E> {
 
     @Override
     public void add(E item) {
-
+        add(size, item);
+    }
+    //This method remove first Node from the list.
+    private void removeFirst() {
+        if (head == null) {
+            throw new IndexOutOfBoundsException(Integer.toString(size));
+        } else {
+            head = head.next;
+            size--;
+        }
     }
 
     @Override
