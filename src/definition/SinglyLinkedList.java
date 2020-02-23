@@ -116,9 +116,28 @@ public class SinglyLinkedList<E> implements ADT<E> {
         }
 
     }
-
+    //This method print only specific node .
+    public void print(int index) {
+        Node<E> response = head;
+        System.out.println("-------- * -------- * -------- * --------");
+        for (int i = 0; i < index; i++) {
+            E data = response.getData();
+            response = response.getNext();
+            if (i == index - 1) {
+                System.out.println(data);
+            }
+        }
+    }
+    //This method print all the nodes in list.
     @Override
     public void print() {
+        Node<E> response = head;
+        System.out.println("---Here are all your contacts---");
+        for (int i = 0; i < size; i++) {
+            E data = response.getData();
+            response = response.getNext();
+            System.out.println(data);
+        }
 
     }
 
